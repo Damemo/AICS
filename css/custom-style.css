@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .facebook-link,
 .linkedin-link {
     display: flex;
@@ -162,3 +163,169 @@
         left: 10%;
     }
 }
+=======
+.facebook-link,
+.linkedin-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.facebook-icon,
+.linkedin-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    transition: fill 0.3s ease;
+}
+
+.facebook-icon {
+    fill: #1877f2; /* Facebook blue */
+}
+
+.linkedin-icon {
+    fill: #0077b5; /* LinkedIn blue */
+}
+
+.facebook-link:hover .facebook-icon {
+    fill: #4267B2; /* Lighter Facebook blue for hover state */
+}
+
+.linkedin-link:hover .linkedin-icon {
+    fill: #00a0dc; /* Lighter LinkedIn blue for hover state */
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 120px; /* Smaller size for mobile devices */
+        height: 120px;
+    }
+}
+
+/* Topbar */
+.topbar {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.top-contact, .top-link {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.top-contact {
+    justify-content: flex-start;
+}
+
+.top-link {
+    justify-content: flex-end;
+}
+
+.top-contact li, .top-link li {
+    margin-right: 15px;
+}
+
+.top-contact li:last-child, .top-link li:last-child {
+    margin-right: 0;
+}
+
+.top-contact li, .top-contact li a, .top-link li a {
+    color: #2C2D3F;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.top-contact li i {
+    color: #1A76D1;
+    margin-right: 5px;
+}
+
+.facebook-link, .linkedin-link {
+    color: #1A76D1;
+    font-size: 16px;
+}
+
+.get-quote .btn {
+    padding: 5px 15px;
+    background-color: #1A76D1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+    .top-contact, .top-link {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .top-contact {
+        margin-bottom: 10px;
+    }
+
+    .top-link {
+        margin-top: 10px;
+    }
+
+    .top-contact li, .top-link li {
+        margin: 5px 10px;
+    }
+
+    .get-quote {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .get-quote .btn {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+/* End Topbar */
+
+
+ /*Contact Form on Carousel */ 
+ .contact-form.myform {
+    position: absolute;
+    width: 300px; /* Adjust as needed */
+    right: 100px; /* Adjust to position horizontally */
+    top: 300px; /* Adjust to position vertically */
+    background: #1a76d1;
+    padding: 20px;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Style form elements */
+.contact-form.myform input,
+.contact-form.myform textarea,
+.contact-form.myform button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .contact-form.myform {
+        width: 80%;
+        right: 10%;
+        left: 10%;
+    }
+}
+>>>>>>> d14812a84d34d7daad24af98fc67f9c5947f8225
